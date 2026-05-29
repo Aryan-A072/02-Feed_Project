@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+input, .btn, input textarea{
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
