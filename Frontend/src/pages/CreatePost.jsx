@@ -13,7 +13,7 @@ const CreatePost = () => {
 
         const formData = new FormData(e.target)
 
-        axios.post("http://localhost:3000/create-post", formData)
+        axios.post(`${import.meta.env.VITE_API_URL}/create-post`, formData)
         .then((res) => {
             navigator("/post")
         })

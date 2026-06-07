@@ -8,6 +8,14 @@ const cors = require("cors")
 const app = express()
 
 app.use(cors())
+
+const cors = require("cors");
+
+app.use(cors({
+  origin: "https://02-feed-project.vercel.app/",
+  credentials: true
+}));
+
 app.use(express.json())
 
 const upload = multer({ storage: multer.memoryStorage() })
